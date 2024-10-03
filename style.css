@@ -41,7 +41,7 @@ p {
   margin: auto;
 }
 .navbar {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
   width: 100%;
@@ -104,6 +104,33 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.typewriter::before {
+  content: "";
+  animation: typing 5s infinite;
+}
+@keyframes typing {
+  0.0000%, 38.5% { content: ""; }
+  1.5%, 37% { content: "D"; }
+  3%, 35.5% { content: "De"; }
+  4.5%, 34% { content: "Dev"; }
+  6%, 32.5% { content: "Deve"; }
+  7.5%, 31% { content: "Devel"; }
+  9%, 29.5% { content: "Develo"; }
+  10.5%, 28% { content: "Develop"; }
+  12%, 26.5% { content: "Develope"; }
+  13.5%, 25% { content: "Developer"; }
+
+ 
+  50%, 88.333% { content: ""; }
+  51.666%, 86.666% { content: "D"; }
+  53.3333%, 85% { content: "De"; }
+  55%, 83.333% { content: "Des"; }
+  56.666%, 81.666% { content: "Desi"; }
+  58.333%, 80% { content: "Desig"; }
+  60%, 78.333% { content: "Design"; }
+  61.666%, 76.666% { content: "Designe"; }
+  63.333%, 75% { content: "Designer"; }
 }
 .main h3 {
   font-weight: 600;
